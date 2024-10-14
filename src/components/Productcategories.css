@@ -1,0 +1,112 @@
+.productcategories {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.productcategories h1 {
+    display: flex;
+    justify-content: center;
+    color: #eba1b4;
+    font-weight: 800;
+box-shadow: 20px 20px 30px rgba(252, 156, 192, .4);
+}
+.row {
+    display: flex; /* Kategorileri yan yana yerleştirir */
+    gap: 20px; /* Kategoriler arasında boşluk ekler */
+    align-items: center; 
+    justify-content: center;
+}
+
+.category {
+    perspective: 1000px; /* 3D dönüşüm için perspektif */
+    flex: 1; /* Eşit genişlik */
+}
+
+.card {
+    width: 100%; /* Kart genişliği */
+    height: 450px; /* Kart yüksekliği */
+    background-color: #eba1b4; /* Arka plan rengi */
+    border-radius: 15px; /* Kenar yuvarlama */
+    position: relative; /* İçindeki elemanlar için konum */
+    overflow: hidden; /* Taşma durumunda gizleme */
+  border: transparent;
+  box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.7);  
+  transition: transform 0.6s; /* Dönüşüm geçiş süresi */
+}
+
+.card-inner {
+    position: relative;
+    height: 100%; /* İçerik yüksekliği */
+    transform-style: preserve-3d; /* 3D dönüşüm stili */
+    transition: transform 0.6s; /* Dönüşüm geçiş süresi */
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg); /* Hover durumunda 180 derece döner */
+}
+
+.card-front,
+.card-back {
+    position: absolute; /* Üst üste gelmesi için konumlandırma */
+    width: 100%; /* Kart genişliği */
+    height: 100%; /* Kart yüksekliği */
+    backface-visibility: hidden; /* Arka yüzün görünürlüğü */
+    display: flex; /* İçerik ortalama */
+    justify-content: center; /* İçeriği yatay olarak ortala */
+    align-items: center; /* İçeriği dikey olarak ortala */
+}
+
+.card-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: nowrap;
+    background-color: #eba1b4; /* Ön yüz arka plan rengi */
+}
+
+.card-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #daf6f4; /* Arka yüz arka plan rengi */
+    transform: rotateY(180deg); /* Arka yüzü 180 derece döndür */
+}
+.card-back h2 {
+    color: #eba1b4;
+    font-weight: 800;
+}
+.card-front h2 {
+    color: #fff; /* Başlık rengi */
+    font-weight: 800; /* Kalınlık */
+}
+
+.category-button {
+    margin-top: 10px; /* Buton üst boşluğu */
+    padding: 15px 50px; /* Buton iç boşluğu */
+    background-color: #eba1b4; /* Buton arka plan rengi */
+    border: none; /* Kenarları kaldır */
+    border-radius: 25px; /* Buton köşe yuvarlama */
+  color: #fff;
+  transition: all 0.1s ease;
+  cursor: pointer; /* İmleç değişimi */
+}
+.category-button:hover {
+    background-color: #94ede4; /* Buton hover arka plan rengi */
+   box-shadow: 10px 10px 10px rgba(91, 190, 247, 0.7);
+    transform: scale(1.1); /* Büyüme efekti */
+}
+.card-back img {
+    width: 90%;
+    border-radius: 30px;
+}
+@media(max-width:576px) {
+    .productcategories .container .row {
+        display: flex;
+        flex-direction: column;
+    }
+   .productcategories {
+    height: 100%;
+   }
+}

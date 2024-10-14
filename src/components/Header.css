@@ -39,3 +39,99 @@ color: #f04681;
     color: #7bd5e0;
     cursor: pointer;
 }
+.header-bars {
+    color: #f04681;
+    font-size: 50px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.mobile-links {
+    display: flex;
+    flex: column;
+    justify-content: center;
+    flex-direction: column;
+    height: 60vh;
+    color: #f04681;
+}
+.mobile-links a {
+    margin-bottom: 30px;
+    font-size: 22px;
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0; /* Başlangıçta görünmez */
+  transform: translateY(20px);
+  display: inline-block;
+}
+
+.mobile-links a:nth-child(1) {
+    animation-delay: 0.2s; /* 1. link 0.2 saniye gecikmeli gelir */
+  }
+  
+  .mobile-links a:nth-child(2) {
+    animation-delay: 0.4s; /* 2. link 0.4 saniye gecikmeli gelir */
+  }
+  
+  .mobile-links a:nth-child(3) {
+    animation-delay: 0.6s; /* 3. link 0.6 saniye gecikmeli gelir */
+  }
+  .mobile-links a:nth-child(4) {
+    animation-delay: 0.8s; /* 3. link 0.6 saniye gecikmeli gelir */
+  }
+  .mobile-links a:nth-child(5) {
+    animation-delay: 1s; /* 3. link 0.6 saniye gecikmeli gelir */
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Yukarı doğru hareket başlar */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Yukarı doğru hareket tamamlansın */
+    }
+  }
+.mobile-links a:first-child {
+  margin-top: 120px;  
+}
+.mobile-menyu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffd8e2;
+    box-shadow: 20px 20px 30px rgba(206, 106, 147, 0.7);
+    width: 300px;
+    height: 100vh;
+    padding: 50px 20px;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+    z-index: 999;
+  }
+
+  .mobile-menyu.aktiv {
+    transform: translateX(0);
+  }
+.mobile-menyu img {
+    width: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.mobile-menyu .baglamaiconu {
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    font-size: 40px;
+    color: #f04681;
+}
+@media(min-width:768px) {
+    .header-bars {
+        display: none;
+    }
+}
+@media(max-width:576px) {
+    .header .nav-links {
+        display: none;
+    }
+    .header .contact {
+   display: none; }
+}

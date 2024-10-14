@@ -1,0 +1,13 @@
+.featured {
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-transform: uppercase;
+   border: transparent;
+    background: linear-gradient(to right, #fff, #fab3bf,#fab3bf, #f87a8f);
+}
+.products1 {
+   background-color:  #fff;
+}
