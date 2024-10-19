@@ -75,6 +75,9 @@ height: auto;
 display: block;
 }
 @media(max-width:576px) {
+    .about {
+        height: 110vh;
+    }
     .about-text {
         font-size: 15px;
         padding: 0 25px;
