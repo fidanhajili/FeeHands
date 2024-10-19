@@ -11,3 +11,8 @@
 .products1 {
    background-color:  #fff;
 }
+@media(max-width:576px) {
+    .featured {
+        font-size: 25px;
+    }
+}

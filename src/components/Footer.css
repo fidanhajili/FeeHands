@@ -1,0 +1,20 @@
+.footer {
+    height: 20vh;
+    background: linear-gradient(to top, #80bdc7,#cdf6fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer a {
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 15px;
+    color: #000;
+}
+.footer p {
+ margin-top: 40px;
+}
+.footer-links {
+    margin-top: 20px;
+}

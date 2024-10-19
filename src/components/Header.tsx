@@ -8,6 +8,7 @@ import { SiWhatsapp } from "react-icons/si";
 //icons
 import { HiBars3BottomRight } from "react-icons/hi2";
 import { IoCloseCircleOutline } from 'react-icons/io5';
+import { Link } from 'react-router-dom';
 
 
 
@@ -37,12 +38,17 @@ const menyunubagla = () => {
 
 <a href=""><img src="/images/header/logo1.png" alt="" /></a>
 <div className="mobile-links">
-<a href="" className='nav-link'>Home</a>
-    <a href="" className='nav-link'>Shop</a>
-    <a href="" className='nav-link'>Product</a>
-    <a href="" className='nav-link'>FAQ</a>
-    <a href="" className='nav-link'>Collections</a>
+<Link to="/" className='nav-link'>Home</Link>
+    <Link to="/shop" className='nav-link'>Shop</Link>
+    <Link to="/product" className='nav-link'>Product</Link>
+    <Link to="/faq" className='nav-link'>FAQ</Link>
+    <Link to="/collections" className='nav-link'>Collections</Link>
 </div>
+<div className="mobile-contact">
+ <SlSocialInstagram className='contact-icon'/>
+ <SiTiktok className='contact-icon'/>
+ <SiWhatsapp className='contact-icon'/>
+ </div>
 </div>
 
 <header className='header'>
@@ -52,11 +58,11 @@ const menyunubagla = () => {
 <HiBars3BottomRight className='header-bars' onClick={(menyunuAch)} />
 
  <div className="nav-links">
-    <a href="" className='nav-link'>Home</a>
-    <a href="" className='nav-link'>Shop</a>
-    <a href="" className='nav-link'>Product</a>
-    <a href="" className='nav-link'>FAQ</a>
-    <a href="" className='nav-link'>Collections</a>
+    <Link to="/" className='nav-link'>Home</Link>
+  <Link to='/shop' className='nav-link'>Shop</Link>
+    <Link to="/product" className='nav-link'>Product</Link>
+    <Link to="/faq" className='nav-link'>FAQ</Link>
+    <Link to="/collections" className='nav-link'>Collections</Link>
  </div>
  <div className="contact">
  <SlSocialInstagram className='contact-icon'/>

@@ -109,4 +109,25 @@ box-shadow: 20px 20px 30px rgba(252, 156, 192, .4);
    .productcategories {
     height: 100%;
    }
+   .card-back img {
+    width: 300px;
+   }
+   .productcategories h1 {
+    padding: 40px 0;
+   }
+}
+@media(min-width:768px) and (max-width:992px) {
+    .category .card {
+      width: 90vw;
+      height: 650px;
+    }
+    .productcategories {
+        height: 230vh;
+    }
+    .card-back img {
+        width: 500px;
+    }
+     .productcategories h1 {
+            padding: 40px 0;
+        }
 }

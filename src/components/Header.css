@@ -62,24 +62,6 @@ color: #f04681;
   transform: translateY(20px);
   display: inline-block;
 }
-
-.mobile-links a:nth-child(1) {
-    animation-delay: 0.2s; /* 1. link 0.2 saniye gecikmeli gelir */
-  }
-  
-  .mobile-links a:nth-child(2) {
-    animation-delay: 0.4s; /* 2. link 0.4 saniye gecikmeli gelir */
-  }
-  
-  .mobile-links a:nth-child(3) {
-    animation-delay: 0.6s; /* 3. link 0.6 saniye gecikmeli gelir */
-  }
-  .mobile-links a:nth-child(4) {
-    animation-delay: 0.8s; /* 3. link 0.6 saniye gecikmeli gelir */
-  }
-  .mobile-links a:nth-child(5) {
-    animation-delay: 1s; /* 3. link 0.6 saniye gecikmeli gelir */
-  }
   @keyframes fadeInUp {
     from {
       opacity: 0;
@@ -99,7 +81,7 @@ color: #f04681;
     left: 0;
     background-color: #ffd8e2;
     box-shadow: 20px 20px 30px rgba(206, 106, 147, 0.7);
-    width: 300px;
+    width: 70vw !important;
     height: 100vh;
     padding: 50px 20px;
     transform: translateX(-100%);
@@ -118,12 +100,12 @@ color: #f04681;
 }
 .mobile-menyu .baglamaiconu {
     position: fixed;
-    top: 50px;
+    top: 20px;
     right: 20px;
-    font-size: 40px;
+    font-size: 30px;
     color: #f04681;
 }
-@media(min-width:768px) {
+@media(min-width:992px) {
     .header-bars {
         display: none;
     }
@@ -134,4 +116,41 @@ color: #f04681;
     }
     .header .contact {
    display: none; }
+   .mobile-menyu .mobile-links a {
+    font-size: 18px !important;
+   }
+   .mobile-menyu .mobile-contact .contact-icon{
+    font-size: 15px;
+    margin-top: 60px;
+}
+    .mobile-menyu .baglamaiconu {
+    font-size: 32px !important;
+    }
+   }
+@media(max-width:768px) {
+    .header .nav-links {
+        display: none;
+    }
+    .header-bars {
+       display: block;
+    }
+    .header .contact {
+        display: none;
+    }
+    .mobile-menyu {
+        width: 50vw;
+    }
+    .mobile-menyu .mobile-links a {
+        font-size: 30px;
+    }
+    .mobile-menyu .baglamaiconu {
+        font-size: 55px;
+    }
+    .mobile-menyu .mobile-contact {
+        font-size: 30px;
+        color: #f04681;
+    }
+    .mobile-menyu .mobile-contact .contact-icon {
+    margin-right: 20px;
+    }
 }

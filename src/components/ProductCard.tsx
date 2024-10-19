@@ -1,5 +1,6 @@
 import React from 'react'
 import './ProductCard.css'
+import 'animate.css';
 
 
 interface ProductProps {

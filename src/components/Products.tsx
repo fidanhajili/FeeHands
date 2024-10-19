@@ -10,7 +10,7 @@ import { Autoplay} from 'swiper/modules';
 const Products:React.FC = () => {
   return (
     <> <div className="products1">
-       <h1 className='py-5 text-center featured'>Featured Collection</h1>
+       <h1 className='py-5 text-center featured animate__animated animate__flip'>Featured Collection</h1>
 <div className="container products py-3">
 <Swiper 
         slidesPerView={4}

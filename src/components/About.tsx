@@ -11,7 +11,7 @@ const About: React.FC = () => {
                 </div>
                 <div className="about-text">
                     <h1 className='mt-lg-5 m-5'>About Us</h1>
-                  <p className='text-center my-lg-5'>  Welcome to our world of delightful toys and accessories crafted from organic materials! <br /> Since 2018, we have been dedicated to creating high-quality, eco-friendly products that bring joy to both children and adults. <br /> Our handmade creations include charming plush toys, beautiful accessories, and stylish home decor baskets, all made with love and care. We believe in the importance of sustainability, which is why we use only the finest organic materials in our products.
+                  <p className='text-center my-lg-5 pb-5'>  Welcome to our world of delightful toys and accessories crafted from organic materials! <br /> Since 2018, we have been dedicated to creating high-quality, eco-friendly products that bring joy to both children and adults. <br /> Our handmade creations include charming plush toys, beautiful accessories, and stylish home decor baskets, all made with love and care. We believe in the importance of sustainability, which is why we use only the finest organic materials in our products.
 <br />
                     With thousands of satisfied customers, we take pride in the positive feedback we receive from our community. Our toys are not just gifts; they are cherished companions that spark imagination and creativity. <br /> Whether you’re looking for the perfect gift for a little one or a unique addition to your home, we have something special for everyone.
                     <br />

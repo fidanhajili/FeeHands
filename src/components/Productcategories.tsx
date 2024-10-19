@@ -8,7 +8,7 @@ const Productcategories:React.FC = () => {
    <div className="productcategories">
   <div className="container">
     <div className="row">
-      <h1 className="text-uppercase">Categories</h1>
+      <h1 className="text-uppercase animate__animated animate__infinite animate__slower animate__bounceIn">Categories</h1>
       <div className="category">
         <div className="card">
           <div className="card-inner">

@@ -1,6 +1,6 @@
 .about {
     height: 100vh;
-    background: linear-gradient(to bottom, #fff, #daf6d4, #aaede7, #94ede4);
+    background: linear-gradient(to bottom, #fff, #fff, #fff, #aaede7)
 }
 .about-left img {
     height: 100vh;
@@ -76,7 +76,8 @@ display: block;
 }
 @media(max-width:576px) {
     .about-text {
-        font-size: 12px;
+        font-size: 15px;
+        padding: 0 25px;
     }
     .about-text h1 {
         text-wrap: nowrap;
@@ -87,4 +88,19 @@ display: block;
     .about-left {
         margin-top: 50%;
     }
+    .about img {
+        display: none;
+    }
+    .about-text p {
+        margin-bottom: 100px;
+       }
+}
+@media (min-width:768px) and (max-width:992px) {
+   .about img {
+    display: none;
+   }
+   .about-text {
+    font-size: 21px;
+    padding: 0 60px;
+   }
 }
